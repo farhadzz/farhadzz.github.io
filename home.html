@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Final Project - Simple Quiz for Gamers!</title>
+</head>
+<body>
+    <div class="quiz-box box">
+        <div class="nomor-pertanyaan" id="nomor-pertanyaan"></div>
+        <div class="pertanyaan" id="question"></div>
+        <div id="pilihan-jawaban">
+            <button id="pilihan1" onclick="checkAnswer(this)"></button>
+            <button id="pilihan2" onclick="checkAnswer(this)"></button>
+            <button id="pilihan3" onclick="checkAnswer(this)"></button>
+            <button id="pilihan4" onclick="checkAnswer(this)"></button>
+        </div>
+        <div class="next-question">
+            <a href="home.html"><button" class="btn" id="btn" style="display: none">Coba lagi</button></a>
+        </div>
+        <div class="score" id="score">
+            Score: <span id='hasil-score'>0</span>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script>setQuestion()</script>
+</body>
+</html>
